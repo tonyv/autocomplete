@@ -1,0 +1,9 @@
+<%= form_tag search_index_path, id: "my-form", method: :post do %>
+    <%= text_field_tag 'my-input', nil %>
+    <%= button_to "Search", search_index_path %>
+<% end %>
+
+<%= javascript_include_tag "autocomplete.js" %>
+<%= javascript_include_tag "https://unpkg.com/axios/dist/axios.min.js" %>
+<%#= javascript_include_tag "https://www.prefixy.io/prefixy.js" %>
+<%#= stylesheet_link_tag "https://www.prefixy.io/prefixy.css" %>
